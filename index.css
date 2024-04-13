@@ -1,0 +1,185 @@
+/* CSS RESET */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background: #9AABD8;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* main styles */
+
+@font-face {
+    font-family: 'cursed-timer';
+    src: url('./CursedTimer.ttf');
+}
+
+.game-board{
+    width: 575px;
+    height: 385px;
+    background: #1B244A;
+    margin: 20px auto;
+}
+
+#game-title{
+    text-align: center;
+    margin: 10px auto;
+    color: #EEEEEE;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.teams {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto 20px auto;;
+}
+
+.team-name {
+    font-size: 40px;
+    color: #EEEEEE;
+    font-family: Verdana;
+}
+
+.score-board {
+    width: 155px;
+    height: 120px;
+    background: #080001;
+    color: #F94F6D;
+    font-size: 90px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'cursed-timer';
+    
+}
+
+.timer-board{
+    display: flex;
+    flex-direction: column;
+    width: 75px;
+    height: 55px;
+    margin: 20px auto 5px;
+    background: #080001;
+    color: #F94F6D;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'cursed-timer';
+    
+}
+
+.game-times{
+    display: flex;
+    flex-direction: column;
+}
+
+.timer-btn{
+    margin: 5px auto ;
+    width: 100px;
+    height: 30px;
+    background: #1B244A;
+    color: #9AABD8;
+    border: 2px solid;
+    border-radius: 5px;
+    font-family: 'cursed-timer';
+}
+
+.add-points {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.game-btn {
+    width: 40px;
+    height: 40px;
+    background: #1B244A;
+    color: #9AABD8;
+    border: 2px solid;
+    border-radius: 5px;
+    font-family: 'cursed-timer';
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.winning-team{
+    color: #70e000;
+}
+
+#new-game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    margin: 5px auto;
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  #timer-box {
+    order: -1; /* Move the timer box to the top */
+  }
+
+  .game-board {
+      width: 350px;
+      height: auto;
+      padding: 10px;
+  }
+
+  .game-times{
+      flex-direction: row;
+  }
+
+  .timer-board{
+      width: 125px;
+      height: 90px;
+      margin: 20px auto;
+  }
+
+  .timer{
+      font-size: 32px;
+  }
+  
+  .game-times{
+      flex-direction: row-reverse;
+  }
+  
+  #new-game{
+      
+  }
+  
+  .teams{
+      margin: 10px auto;
+  }
+}
