@@ -1,7 +1,6 @@
 # bball-tracker
 
-This is a solo project from the 'Frontend Career Path' provided by Scrimba. There info will be posted below.
-
+This is a solo project from the 'Frontend Career Path' provided by Scrimba. Their info will be posted below.
 
 ## About Scrimba
 
@@ -20,7 +19,7 @@ Quick start:
 ```
 $ npm install
 $ npm start
-````
+```
 
 Head over to https://vitejs.dev/ to learn more about using vite
 
